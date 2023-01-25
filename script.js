@@ -15,8 +15,8 @@ let arrayOfTodos = [
 
 const fetchTodos = () => {
     fetch('https://jsonplaceholder.typicode.com/todos')
-    .then( (response) => response.json())
-    .then( (json) => arrayOfTodos = json)
+    .then( (res) => res.json() )
+    .then( (data) => arrayOfTodos = data )
     // .then( () => logTodos())
     // .then( () => populateTodos())
     // .then( () => populateTodos2())
