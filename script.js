@@ -114,7 +114,9 @@ const showComplete = () => {
 
     clearTodos()
 
-    const filteredArray = arrayOfTodos.filter((arr) => arr.completed == true)
+    const numberInput = document.getElementById("num-input").valueAsNumber
+
+    const filteredArray = arrayOfTodos.filter((arr) => arr.userId == numberInput && arr.completed == true)
 
     console.log(filteredArray)
 
@@ -137,7 +139,9 @@ const showIncomplete = () => {
 
     clearTodos()
 
-    const filteredArray = arrayOfTodos.filter((arr) => arr.completed == false)
+    const numberInput = document.getElementById("num-input").valueAsNumber
+
+    const filteredArray = arrayOfTodos.filter((arr) => arr.userId == numberInput && arr.completed == false)
 
     console.log(filteredArray)
 
